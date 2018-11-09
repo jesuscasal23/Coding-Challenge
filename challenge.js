@@ -13,7 +13,7 @@ init = () => {
     // removes the data regarding the old rover
         input.shift()
         input.shift()
-    // updates the number of rover left to move 
+    // updates the number of rovers left to move 
         data.numberOfRovers -=1;
     }
 
@@ -35,7 +35,7 @@ const data = {
     actualDirection: null,
     // gets the path to be explored 
     path:             null,
-    // array descriebing all posible directions 
+    // array describing all posible directions 
     directions:       ["N", "E", "S", "W"],
     // keeps track of the actual direction 
     counter:           0,
@@ -44,7 +44,7 @@ const data = {
 
 const func = {
     
-    // gives the counter the corresponding initail value
+    // gives the counter the corresponding initial value
     setUpCounter (dir) {
         if (dir === "E") { data.counter = 1 }
         if (dir === "S") { data.counter = 2 }
